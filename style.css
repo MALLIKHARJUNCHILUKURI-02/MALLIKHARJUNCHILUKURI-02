@@ -1,0 +1,237 @@
+:root {
+  --primary: #3949ab;
+  --secondary: #6c63ff;
+  --bg: #f5f6fa;
+  --card-bg: #fff;
+  --accent: #22223b;
+  --text: #393e46;
+  --border: #e0e0e0;
+  --shadow: 0 2px 12px rgba(60, 60, 90, 0.12);
+}
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: var(--text);
+  background: var(--bg);
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  font-size: 18px;
+}
+
+header {
+  background: var(--primary);
+  color: #fff;
+  padding: 36px 0 24px 0;
+  box-shadow: var(--shadow);
+}
+
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 32px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0 16px;
+  flex-wrap: wrap;
+}
+
+.profile-img {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #fff;
+  background: #eee;
+  flex-shrink: 0;
+}
+
+.headline {
+  font-size: 1.2em;
+  margin-top: 12px;
+  text-align: center;
+  flex: 1 1 300px;
+}
+
+nav {
+  background: var(--secondary);
+  box-shadow: var(--shadow);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  gap: 18px;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  padding: 16px 14px;
+  font-weight: 500;
+  transition: background 0.2s, color 0.2s;
+  border-radius: 6px;
+}
+
+nav a:hover, nav a:focus {
+  background: #fff;
+  color: var(--primary);
+}
+
+main {
+  max-width: 900px;
+  margin: 44px auto;
+  padding: 0 16px;
+}
+
+section {
+  background: var(--card-bg);
+  border-radius: 12px;
+  margin-bottom: 36px;
+  padding: 28px 32px;
+  box-shadow: var(--shadow);
+  border: 1px solid var(--border);
+}
+
+h1, h2, h3 {
+  color: var(--primary);
+  margin-bottom: 12px;
+}
+.internProjects{
+    list-style: decimal;
+}
+#name{
+    color: white;
+}
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 14px 34px;
+}
+
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px;
+}
+
+.project {
+  flex: 1 1 320px;
+  background: #f3f6fc;
+  padding: 18px 24px;
+  border-radius: 10px;
+  box-shadow: 0 1px 8px rgba(60, 60, 140, .08);
+}
+
+.project h3 {
+  margin-top: 0;
+}
+
+.project a {
+  display: inline-block;
+  margin-top: 8px;
+  color: var(--primary);
+  text-decoration: underline;
+}
+
+.contact-list {
+  list-style: none;
+  padding: 0;
+}
+
+.contact-list li {
+  margin-bottom: 8px;
+  font-size: 1.1em;
+}
+
+footer {
+  background: var(--accent);
+  color: #fff;
+  text-align: center;
+  padding: 16px 0;
+  margin-top: 32px;
+  letter-spacing: 1px;
+}
+
+.date {
+  color: #6c63ff;
+  font-size: 0.95em;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 900px) {
+  header .container {
+    flex-direction: column;
+    gap: 16px;
+    padding: 0 16px;
+  }
+  .headline {
+    text-align: center;
+  }
+  nav ul {
+    justify-content: center;
+  }
+  main {
+    margin: 32px auto;
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  nav ul {
+    gap: 10px;
+  }
+  section {
+    padding: 20px 16px;
+  }
+  .skills-grid {
+    grid-template-columns: 1fr;
+  }
+  .projects-list {
+    flex-direction: column;
+  }
+  main {
+    max-width: 95vw;
+    margin: 24px auto;
+    padding: 0 12px;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    font-size: 16px;
+  }
+  nav a {
+    padding: 12px 10px;
+    font-size: 0.9em;
+  }
+  .profile-img {
+    width: 90px;
+    height: 90px;
+  }
+  section {
+    padding: 16px 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  main {
+    max-width: 1100px;
+  }
+  section {
+    padding: 32px 48px;
+  }
+  .project {
+    flex: 1 1 400px;
+  }
+  .skills-grid {
+    gap: 20px 48px;
+  }
+}
+
+/* Dark Mode (Optional) remains unchanged */
