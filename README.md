@@ -29,10 +29,10 @@ portfolio-site/
 ## 🔧 Getting Started
 
 1. **Clone the repository:**
-git clone https://github.com/your-github-username/portfolio-site.git
+git clone https://github.com/MALLIKHARJUNCHILUKURI-02/MALLIKHARJUNCHILUKURI-02.git
 
 2. **Navigate to the project folder:**
-cd portfolio-site
+cd Personal_Professional_portfolio
 
 3. **Open `index.html` in your browser** to preview locally.
 
