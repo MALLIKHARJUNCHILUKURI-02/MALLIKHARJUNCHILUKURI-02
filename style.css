@@ -78,7 +78,8 @@ nav a {
   border-radius: 6px;
 }
 
-nav a:hover, nav a:focus {
+nav a:hover,
+nav a:focus {
   background: #fff;
   color: var(--primary);
 }
@@ -98,20 +99,34 @@ section {
   border: 1px solid var(--border);
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--primary);
   margin-bottom: 12px;
 }
-.internProjects{
-    list-style: decimal;
+
+.internProjects {
+  list-style: decimal;
 }
-#name{
-    color: white;
+
+#name {
+  color: white;
 }
+
 .skills-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 14px 34px;
+}
+
+#education ul li {
+  list-style: none;
+  background: #f3f6fc;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 1px 8px rgba(60, 60, 140, .08);
+  margin-bottom: 20px;
 }
 
 .projects-list {
@@ -170,12 +185,15 @@ footer {
     gap: 16px;
     padding: 0 16px;
   }
+
   .headline {
     text-align: center;
   }
+
   nav ul {
     justify-content: center;
   }
+
   main {
     margin: 32px auto;
     padding: 0 12px;
@@ -186,15 +204,19 @@ footer {
   nav ul {
     gap: 10px;
   }
+
   section {
     padding: 20px 16px;
   }
+
   .skills-grid {
     grid-template-columns: 1fr;
   }
+
   .projects-list {
     flex-direction: column;
   }
+
   main {
     max-width: 95vw;
     margin: 24px auto;
@@ -206,14 +228,17 @@ footer {
   body {
     font-size: 16px;
   }
+
   nav a {
     padding: 12px 10px;
     font-size: 0.9em;
   }
+
   .profile-img {
     width: 90px;
     height: 90px;
   }
+
   section {
     padding: 16px 12px;
   }
@@ -223,12 +248,15 @@ footer {
   main {
     max-width: 1100px;
   }
+
   section {
     padding: 32px 48px;
   }
+
   .project {
     flex: 1 1 400px;
   }
+
   .skills-grid {
     gap: 20px 48px;
   }

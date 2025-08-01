@@ -39,6 +39,9 @@ if (!document.getElementById('dark-css')) {
     .dark-mode a, .dark-mode .project a {
       color: #90caf9 !important;
     }
+      .dark-mode .edu li{
+         background: #22223b !important;
+      }
   `;
   document.head.appendChild(style);
 }
