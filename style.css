@@ -249,7 +249,7 @@ footer {
 }
 
 .date {
-  color: #6c63ff;
+  color: crimson;
   font-size: 0.95em;
 }
 
@@ -380,6 +380,3 @@ footer {
     font-size: 16px;
   }
 }
-
-
-/* Dark Mode (Optional) remains unchanged */

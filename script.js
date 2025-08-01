@@ -1,4 +1,4 @@
-// Optional: Add dark mode toggle
+
 const btn = document.createElement('button');
 btn.textContent = '🌙 Dark Mode';
 btn.style.position = 'fixed';
