@@ -2,13 +2,13 @@
 const btn = document.createElement('button');
 btn.textContent = '🌙 Dark Mode';
 btn.style.position = 'fixed';
-btn.style.top = '14px';
+btn.style.top = '50px';
 btn.style.right = '16px';
 btn.style.zIndex = 1000;
 btn.style.padding = '8px 14px';
 btn.style.borderRadius = '6px';
 btn.style.border = 'none';
-btn.style.background = '#3949ab';
+btn.style.background = '#283169ff';
 btn.style.color = '#fff';
 btn.style.cursor = 'pointer';
 btn.style.fontWeight = 'bold';
@@ -48,3 +48,12 @@ if (!document.getElementById('dark-css')) {
 
 
 document.getElementById("year").textContent = new Date().getFullYear();
+
+
+
+const menuToggle = document.querySelector('.menu-toggle');
+const navLinks = document.querySelector('.nav-links');
+
+menuToggle.addEventListener('click', () => {
+  navLinks.classList.toggle('active');
+});

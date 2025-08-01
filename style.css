@@ -54,35 +54,57 @@ header .container {
   flex: 1 1 300px;
 }
 
+
 nav {
-  background: var(--secondary);
+  background: var(--primary);
   box-shadow: var(--shadow);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem;
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 nav ul {
   display: flex;
   justify-content: center;
+  align-items: center;
+  gap: 22px;
   list-style: none;
   margin: 0;
   padding: 0;
-  gap: 18px;
   flex-wrap: wrap;
+}
+
+nav li {
+  display: inline-block;
 }
 
 nav a {
   text-decoration: none;
   color: #fff;
-  padding: 16px 14px;
+  padding: 12px 16px;
   font-weight: 500;
-  transition: background 0.2s, color 0.2s;
-  border-radius: 6px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: all 0.3s ease;
+}
+
+nav a i {
+  font-size: 1rem;
 }
 
 nav a:hover,
 nav a:focus {
-  background: #fff;
+  background-color: #fff;
   color: var(--primary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
+
+
 
 main {
   max-width: 900px;
@@ -126,7 +148,7 @@ h3 {
   background: #fff;
   /* padding: 30px; */
   border-radius: 16px;
-  box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
   font-family: 'Segoe UI', sans-serif;
   max-width: 1000px;
 }
@@ -160,10 +182,11 @@ h3 {
   border-radius: 20px;
   font-size: 16px;
   margin: 4px 6px 4px 0;
-  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
 }
-i{
+
+i {
   color: #444;
 }
 
@@ -179,6 +202,7 @@ i{
   box-shadow: 0 1px 8px rgba(60, 60, 140, .08);
   margin-bottom: 20px;
 }
+
 
 .projects-list {
   display: flex;
@@ -228,6 +252,39 @@ footer {
   color: #6c63ff;
   font-size: 0.95em;
 }
+
+
+.menu-toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 1.5rem;
+  color: #fff;
+  cursor: pointer;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .menu-toggle {
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding-top: 1rem;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  nav ul {
+    justify-content: flex-start;
+  }
+}
+
 
 /* Responsive Adjustments */
 @media (max-width: 900px) {
@@ -318,6 +375,7 @@ footer {
   .skills-section h2 {
     font-size: 22px;
   }
+
   .skill-category h3 {
     font-size: 16px;
   }
@@ -325,4 +383,3 @@ footer {
 
 
 /* Dark Mode (Optional) remains unchanged */
-
