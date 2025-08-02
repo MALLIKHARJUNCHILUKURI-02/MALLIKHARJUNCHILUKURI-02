@@ -2,10 +2,10 @@
 const btn = document.createElement('button');
 btn.textContent = '🌙 Dark Mode';
 btn.style.position = 'fixed';
-btn.style.top = '50px';
-btn.style.right = '16px';
+btn.style.top = '15px';
+btn.style.right = '6px';
 btn.style.zIndex = 1000;
-btn.style.padding = '8px 14px';
+btn.style.padding = '4px 4px';
 btn.style.borderRadius = '6px';
 btn.style.border = 'none';
 btn.style.background = '#283169ff';
@@ -37,11 +37,14 @@ if (!document.getElementById('dark-css')) {
       border: 1px solid #292929 !important;
     }
     .dark-mode a, .dark-mode .project a {
-      color: #90caf9 !important;
+      color: #18cda0ff !important;
     }
-      .dark-mode .edu li{
+    .dark-mode .edu li{
          background: #22223b !important;
-      }
+    }
+         .dark-mode nav {
+    background-color: rgba(22, 22, 22, 0.8) !important;
+  }
   `;
   document.head.appendChild(style);
 }
