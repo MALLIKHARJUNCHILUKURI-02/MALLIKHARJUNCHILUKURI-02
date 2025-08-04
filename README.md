@@ -52,8 +52,8 @@ cd Personal_Professional_portfolio
 
 For questions, feedback, or collaboration opportunities, connect with me:
 - **Email:** mkreddychilukuri075@gmail.com  
-- **LinkedIn:** [linkedin.com/in/yourprofile](https://www.linkedin.com/in/mallikharjun-reddy-chilukuri-754b92241)  
-- **GitHub:** [github.com/your-github](https://github.com/MALLIKHARJUNCHILUKURI-02)  
+- **LinkedIn:** [linkedin.com](https://www.linkedin.com/in/mallikharjun-reddy-chilukuri-754b92241)  
+- **GitHub:** [github.com](https://github.com/MALLIKHARJUNCHILUKURI-02)  
 
 *Feel free to fork, customize, and use this portfolio template for your own projects!*
 
