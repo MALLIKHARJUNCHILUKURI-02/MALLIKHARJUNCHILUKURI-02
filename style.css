@@ -229,14 +229,11 @@ i {
   text-decoration: underline;
 }
 
-.contact-list {
-  list-style: none;
-  padding: 0;
+#contact {
+  text-align: center;
 }
-
-.contact-list li {
-  margin-bottom: 8px;
-  font-size: 1.1em;
+#contact a{
+  padding: 4px;
 }
 
 .github li {
