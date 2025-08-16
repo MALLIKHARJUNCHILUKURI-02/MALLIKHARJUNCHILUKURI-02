@@ -39,8 +39,8 @@ header .container {
 }
 
 .profile-img {
-  width: 110px;
-  height: 110px;
+  width: 200px;
+  height: 200px;
   border-radius: 50%;
   object-fit: cover;
   border: 4px solid #fff;
@@ -359,8 +359,8 @@ footer {
   }
 
   .profile-img {
-    width: 90px;
-    height: 90px;
+    width: 150px;
+    height: 150px;
   }
 
   section {
