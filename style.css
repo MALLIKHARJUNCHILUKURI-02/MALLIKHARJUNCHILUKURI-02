@@ -19,7 +19,10 @@ body {
   line-height: 1.6;
   font-size: 18px;
 }
-
+#about p{
+  font-family: 'Inter', sans-serif;
+  text-align: justify;
+}
 header {
   background: var(--primary);
   color: #fff;
